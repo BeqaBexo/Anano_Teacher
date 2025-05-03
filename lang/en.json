@@ -1,10 +1,23 @@
 {
   "title": "Learn English with Anano",
   "subtitle": "Interactive lessons that make learning fun!",
-  "contactBtn": "Get Started",
   "aboutTitle": "About Me",
-  "aboutText": "Hello! I'm Anano – a certified English teacher with a degree from Batumi State University. I have over 4 years of experience helping kids and teens grow their language skills with joy, creativity, and confidence.",
-  "footerText": "© 2025 Anano Teacher. All rights reserved.",
-  "topicsTitle": "What You'll Learn"
-
+  "aboutText": "Hello! I'm Anano – a certified English teacher with a degree from Batumi State University...",
+  "topicsTitle": "What You'll Learn",
+  "topic1": "🎓 Grammar Basics",
+  "topic2": "🗣 Speaking Practice",
+  "topic3": "📝 Writing Skills",
+  "topic4": "🎧 Listening Exercises",
+  "topic5": "📖 Reading Stories",
+  "topic6": "🎮 Fun Vocabulary Games",
+  "scheduleTitle": "Weekly Schedule",
+  "monday": "Monday",
+  "mondayTime": "10:00 AM - 12:00 PM",
+  "wednesday": "Wednesday",
+  "wednesdayTime": "2:00 PM - 4:00 PM",
+  "friday": "Friday",
+  "fridayTime": "11:00 AM - 1:00 PM",
+  "contactTitle": "Get in Touch",
+  "submitBtn": "Send Message",
+  "footerText": "© 2025 Anano Teacher. All rights reserved."
 }

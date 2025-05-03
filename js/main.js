@@ -6,7 +6,8 @@ function setLanguage(lang) {
         const el = document.getElementById(key);
         if (el) el.textContent = data[key];
       }
-    });
+    })
+    .catch(error => console.error('Error loading language file:', error));
 }
 
 window.onload = () => setLanguage('ka');
