@@ -6,14 +6,15 @@
                 const el = document.getElementById(key);
                 if (el) el.textContent = data[key];
             }
+
+            // Update lang and icon
             document.documentElement.lang = lang;
             localStorage.setItem('preferredLang', lang);
 
-            // Update icon based on current lang
             const langBtn = document.getElementById('langToggle');
             langBtn.textContent = lang === 'ka' ? '🇬🇧' : '🇬🇪';
         })
-        .catch(error => console.error('Error loading language file:', error));
+        .catch(err => console.error('Error loading language file:', err));
 }
 
 function toggleLanguage() {
