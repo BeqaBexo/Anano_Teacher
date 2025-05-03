@@ -9,4 +9,4 @@ function setLanguage(lang) {
     });
 }
 
-window.onload = () => setLanguage('en');
+window.onload = () => setLanguage('ka');
