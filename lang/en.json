@@ -19,5 +19,9 @@
   "fridayTime": "11:00 AM - 1:00 PM",
   "contactTitle": "Get in Touch",
   "submitBtn": "Send Message",
-  "footerText": "© 2025 Anano Teacher. All rights reserved."
+  "footerText": "© 2025 Anano Teacher. All rights reserved.",
+  "aboutLink": "About Me",
+  "topicsLink": "What You'll Learn",
+  "scheduleLink": "Weekly Schedule",
+  "contactLink": "Get in Touch"
 }
