@@ -4,7 +4,7 @@ function toggleLanguage() {
     currentLang = currentLang === 'ka' ? 'en' : 'ka';
     setLanguage(currentLang);
     const langIcon = document.getElementById('langToggle');
-    langIcon.src = currentLang === 'ka' ? 'images/en_flag.png' : 'images/ka_flag.png';
+    langIcon.src = currentLang === 'ka' ? 'assets/images/en_flag.png' : 'assets/images/ka_flag.png';
 }
 
 function setLanguage(lang) {
