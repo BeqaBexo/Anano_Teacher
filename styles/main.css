@@ -1,0 +1,90 @@
+/* Reset & Global */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #6c63ff;
+}
+
+h1, h2 {
+    margin-bottom: 0.5em;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #6c63ff;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu a {
+    margin-left: 1rem;
+    color: white;
+    transition: 0.3s;
+}
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+/* Hero Section */
+.hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #f0f4ff;
+}
+
+    .hero .btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.8rem 1.5rem;
+        background: #6c63ff;
+        color: white;
+        border-radius: 8px;
+        transition: background 0.3s;
+    }
+
+        .hero .btn:hover {
+            background: #514bcf;
+        }
+
+/* About */
+.about, .lessons, .contact {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+    .lessons ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .lessons li {
+        padding: 0.5rem 0;
+        font-size: 1.1rem;
+    }
+
+/* Footer */
+.site-footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
