@@ -1,4 +1,4 @@
-﻿let currentLang = 'ka'; // Default
+﻿let currentLang = 'ka'; // Default language
 
 function toggleLanguage() {
     currentLang = currentLang === 'ka' ? 'en' : 'ka';
@@ -21,5 +21,6 @@ function setLanguage(lang) {
 
 window.onload = () => {
     setLanguage(currentLang);
-    document.getElementById('langToggle').src = 'images/en_flag.png';
+    const langIcon = document.getElementById('langToggle');
+    langIcon.src = currentLang === 'ka' ? 'assets/images/en_flag.png' : 'assets/images/ka_flag.png';
 };
