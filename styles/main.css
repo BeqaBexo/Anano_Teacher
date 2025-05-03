@@ -82,6 +82,44 @@ body {
         background: #5b4fbd;
     }
 
+/* Topics Section */
+.topics-section {
+    background: #fdfdfe;
+    padding: 4rem 2rem;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+    .topics-section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #5a4fcf;
+    }
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.topic-card {
+    background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
+    border-radius: 12px;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+    .topic-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    }
+
+
 /* About Section */
 .about-section {
     padding: 4rem 2rem;
