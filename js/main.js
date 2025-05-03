@@ -1,10 +1,10 @@
-﻿let currentLang = 'ka'; // Default language
+﻿let currentLang = localStorage.getItem('language') || 'ka'; // Default is 'ka'
 
 function toggleLanguage() {
     currentLang = currentLang === 'ka' ? 'en' : 'ka';
     setLanguage(currentLang);
-    const langIcon = document.getElementById('langToggle');
-    langIcon.src = currentLang === 'ka' ? 'assets/images/en_flag.png' : 'assets/images/ka_flag.png';
+    localStorage.setItem('language', currentLang); // Save to localStorage
+    updateLangIcon();
 }
 
 function setLanguage(lang) {
@@ -19,8 +19,12 @@ function setLanguage(lang) {
         .catch(err => console.error('Language switch failed:', err));
 }
 
-window.onload = () => {
-    setLanguage(currentLang);
+function updateLangIcon() {
     const langIcon = document.getElementById('langToggle');
     langIcon.src = currentLang === 'ka' ? 'assets/images/en_flag.png' : 'assets/images/ka_flag.png';
+}
+
+window.onload = () => {
+    setLanguage(currentLang);
+    updateLangIcon();
 };
