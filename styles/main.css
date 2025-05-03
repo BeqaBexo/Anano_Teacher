@@ -1,15 +1,16 @@
-/* Reset & Global */
+/* Reset and base styles */
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #fefefe;
+    background-color: #fafafa;
     color: #333;
     line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: #6c63ff;
+img {
+    max-width: 100%;
+    display: block;
 }
 
 h1, h2 {
@@ -22,70 +23,138 @@ h1, h2 {
     justify-content: space-between;
     align-items: center;
     background: #6c63ff;
-    padding: 1rem 2rem;
     color: white;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 
-.menu a {
-    margin-left: 1rem;
+.main-nav a {
+    margin: 0 10px;
     color: white;
-    transition: 0.3s;
-
+    text-decoration: none;
+    font-weight: 500;
 }
 
-    .menu a:hover {
+    .main-nav a:hover {
         text-decoration: underline;
     }
 
-/* Hero Section */
+#langSelect {
+    margin-left: 1rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+/* Hero */
 .hero {
     padding: 4rem 2rem;
     text-align: center;
-    background: #f0f4ff;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    animation: fadeIn 1.5s ease;
 }
 
-    .hero .btn {
-        display: inline-block;
+    .hero button {
         margin-top: 1rem;
-        padding: 0.8rem 1.5rem;
+        padding: 0.7rem 1.5rem;
         background: #6c63ff;
+        border: none;
         color: white;
-        border-radius: 8px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1rem;
         transition: background 0.3s;
     }
 
-        .hero .btn:hover {
-            background: #514bcf;
+        .hero button:hover {
+            background: #5049d4;
         }
 
-/* About */
-.about, .lessons, .contact {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+/* Sections */
+section {
+    padding: 3rem 2rem;
     text-align: center;
 }
 
-    .lessons ul {
-        list-style: none;
-        padding: 0;
-    }
+.topics ul {
+    list-style: none;
+    padding: 0;
+}
 
-    .lessons li {
-        padding: 0.5rem 0;
-        font-size: 1.1rem;
-    }
+.topics li {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
 
-/* Footer */
-.site-footer {
-    background: #f4f4f4;
-    text-align: center;
+.schedule table {
+    margin: 2rem auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 700px;
+}
+
+.schedule th, .schedule td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+}
+
+.schedule th {
+    background: #6c63ff;
+    color: white;
+}
+
+.testimonial-card {
+    max-width: 600px;
+    margin: 1rem auto;
+    background: #fff;
     padding: 1.5rem;
-    font-size: 0.9rem;
-    color: #555;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: slideUp 1s ease forwards;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.site-footer {
+    background: #f0f0f0;
+    text-align: center;
+    padding: 2rem;
+    color: #777;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

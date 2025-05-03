@@ -1,12 +1,21 @@
-window.addEventListener("DOMContentLoaded", () => {
-  loadComponent("component/header.html", "#header-placeholder");
-  loadComponent("component/footer.html", "#footer-placeholder");
+document.addEventListener("DOMContentLoaded", () => {
+  const langSelect = document.getElementById("langSelect");
+  loadLanguage(langSelect.value);
+
+  langSelect.addEventListener("change", (e) => {
+    loadLanguage(e.target.value);
+  });
 });
 
-function loadComponent(path, placeholderSelector) {
-  fetch(path)
-    .then(res => res.text())
+function loadLanguage(lang) {
+  fetch(`lang/${lang}.json`)
+    .then(res => res.json())
     .then(data => {
-      document.querySelector(placeholderSelector).innerHTML = data;
-    });
+      // Set text content from JSON
+      for (const key in data) {
+        const el = document.getElementById(key);
+        if (el) el.textContent = data[key];
+      }
+    })
+    .catch(err => console.error("Error loading language file:", err));
 }
